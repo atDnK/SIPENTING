@@ -132,6 +132,11 @@
 .hero-content p {
   color: var(--title);
   line-height: 38px;
+  margin-bottom: 40px;
+}
+
+.content-1 p {
+  margin-bottom: -10px;
 }
 
 .hero .btncek {
