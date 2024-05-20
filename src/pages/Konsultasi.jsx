@@ -27,9 +27,9 @@ const Konsultasi = ({ img, title, descrip, coba }) => {
               <p className="text-lg-start mt-lg-2 main-content fs-5">{"Konsultasikan masalah status gizi anak secara gratis melalui layanan WhatsApp petugas kesehatan gizi yang telah berpengalaman dengan nyaman dari rumah Anda sendiri."}</p>
             </div>
             <div className="text-lg-start">
-              <Link to="/chat" className="rounded-5 btncek">
-                Konsultasi Sekarang
-              </Link>
+             <a className="rounded-5 btncek" href="https://wa.me/+62857547364" target="_blank">Konsultasi Sekarang</a>
+                
+              
             </div>
           </Col>
         </Row>

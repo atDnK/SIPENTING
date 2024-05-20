@@ -49,9 +49,9 @@ const BmiCalculator = () => {
       const { SD3neg, SD2neg, SD1neg, SD0, SD1, SD2, SD3 } = heightStandards;
 
       if (height <= SD3neg) {
-        return "Severely Stunted";
+        return "Sangat pendek";
       } else if (height > SD3neg && height <= SD2neg) {
-        return "Stunted";
+        return "Pendek";
       } else if (height > SD2neg && height <= SD1neg) {
         return "Normal";
       } else if (height > SD1neg && height <= SD0) {
@@ -63,7 +63,7 @@ const BmiCalculator = () => {
       } else if (height > SD2 && height <= SD3) {
         return "Normal";
       } else {
-        return "Tall";
+        return "Tinggi";
       }
     }
 
@@ -119,14 +119,14 @@ const BmiCalculator = () => {
           <Col md={6}>
             <Form.Group>
               <Form.Label className='p-2 fs-6 fw-semibold fw-1'>
-                Nama Lengkap
+                Nama Depan
               </Form.Label>
               <Form.Control
                 className='rounded-5'
                 type='text'
-                value={nama}
+                value={nama} 
                 onChange={(e) => setNama(e.target.value)}
-                placeholder='Masukkan Nama'
+                placeholder='Masukkan Nama Depan'
                 required
                 pattern='[A-Za-z\s]*' // Hanya huruf dan spasi yang diperbolehkan
                 title='Mohon masukkan hanya huruf dan spasi'
@@ -164,13 +164,14 @@ const BmiCalculator = () => {
           <Col md={6}>
             <Form.Group>
               <Form.Label className='p-2 fs-6 fw-semibold'>
-                Tanggal Lahir
+                Nama Belakang
               </Form.Label>
               <Form.Control
                 className='rounded-5'
-                type='date'
+                type='text'
                 value={tl}
                 onChange={(e) => setTl(e.target.value)}
+                placeholder='Masukkan Nama Belakang'
                 required
               />
             </Form.Group>
@@ -216,45 +217,45 @@ const BmiCalculator = () => {
 
       {hasil && (
         <Alert variant='success' className='mt-4  '>
-          <div className='row '>
+          <div className='row'>
             <div
               className='col-lg-8 offset-lg-2 d-flex align-items-center justify-content-center'
               style={{ color: "#3a3c3b" }}
             >
-              <div className='fw-semibold fs-5 float-start'>
+              <div className='fw-semibold fs-5 float-start w-50'>
                 <div className='row'>
-                  <div className='col-md-7'>Nama</div>
-                  <div className='col-md-5'> : {nama}</div>
+                  <div className='col-md-6'>Nama</div>
+                  <div className='col-md-6'> : {nama} {tl}</div>
                 </div>
                 <div className='row'>
-                  <div className='col-md-7'>Umur</div>
-                  <div className='col-md-5'> : {umur}</div>
+                  <div className='col-md-6'>Umur</div>
+                  <div className='col-md-6'> : {umur} bulan</div>
                 </div>
                 <div className='row'>
-                  <div className='col-md-7'>Berat Badan</div>
-                  <div className='col-md-5'> : {bb}</div>
+                  <div className='col-md-6'>Berat Badan</div>
+                  <div className='col-md-6'> : {bb} kg</div>
                 </div>
                 <div className='row'>
-                  <div className='col-md-7'>Tinggi Badan</div>
-                  <div className='col-md-5'> : {tinggi}</div>
+                  <div className='col-md-6'>Tinggi Badan</div>
+                  <div className='col-md-6'> : {tinggi} cm</div>
                 </div>
                 <div className='row'>
-                  <div className='col-md-7'>jenis kelamin</div>
-                  <div className='col-md-5'> : {jk}</div>
+                  <div className='col-md-6'>jenis kelamin</div>
+                  <div className='col-md-6'> : {jk}</div>
                 </div>
                 <div className='row'>
-                  <div className='col-md-7'>BMI </div>
-                  <div className='col-md-5'> : {hasil}</div>
+                  <div className='col-md-6'>IMT </div>
+                  <div className='col-md-6'> : {hasil}</div>
                 </div>
                 <div className='row'>
-                  <div className='col-md-7'>BB/U </div>
-                  <div className='col-md-5'>
+                  <div className='col-md-6'>BB/U </div>
+                  <div className='col-md-6'>
                     : {weightCategoryDecider(bb, jk, umur)}
                   </div>
                 </div>
                 <div className='row'>
-                  <div className='col-md-7'>TB/U </div>
-                  <div className='col-md-5'>
+                  <div className='col-md-6'>TB/U </div>
+                  <div className='col-md-6'>
                     : {heightCategoryDecider(tinggi, jk, umur)}
                   </div>
                 </div>

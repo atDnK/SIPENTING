@@ -43,7 +43,7 @@ export const BmiProvider = ({ children }) => {
     }
 
     // Menyimpan hasil BMI
-    setHasil(` ${bmi.toFixed(2)}, ${kategori}`);
+    setHasil(` ${bmi.toFixed(2)} (${kategori})`);
   };
 
   const setBbHandler = (value) => {

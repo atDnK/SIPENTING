@@ -18,7 +18,7 @@ function CekImt(params) {
             coba={"Yuk Coba"}
             title={"Cek Status Gizi !"}
             descrip={
-              "Pantau pertumbuhan dan perkembangan anak Anda secara berkala. Untuk mengetahui seberapa sehat anak Anda. Cek kondisi anak Anda bisa menggunakan layanan kami. "
+              "Pantau perkembangan gizi anak Anda secara berkala untuk mengetahui seberapa sehat anak Anda. Cek kondisi anak Anda dengan menggunakan layanan kami. "
             } 
           />
 

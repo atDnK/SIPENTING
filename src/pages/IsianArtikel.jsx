@@ -93,39 +93,41 @@ const IsianArtikel = () => {
                     Ditinjau oleh:{" "}
                     <span className="text-warna">
                       {" "}
-                      dr. Fadhli Rizal Makarim{" "}
+                      Petugas UPT Puskesmas Tirto{" "}
                     </span>{" "}
-                    : 15 Juli 2021{" "}
                   </h6>
                   <div className="content-artikel mt-3 text-justify">
                     <p style={{color:"#3a3c3b"}}>
-                      {artikelcontent.content1} {artikelcontent.content2}
+                      {artikelcontent.content1} 
                     </p>
                     <p style={{color:"#3a3c3b"}}>
-                      {artikelcontent.content3} {artikelcontent.content4}
-                    </p>
-
-                    <p style={{color:"#3a3c3b"}}>
-                      {artikelcontent.content1} {artikelcontent.content2}
+                      {artikelcontent.content2} 
                     </p>
                     <p style={{color:"#3a3c3b"}}>
-                      {artikelcontent.content3} {artikelcontent.content4}
-                    </p>
-
-                    <p style={{color:"#3a3c3b"}}>
-                      {artikelcontent.content1} {artikelcontent.content2}
+                      {artikelcontent.content3} 
                     </p>
                     <p style={{color:"#3a3c3b"}}>
-                      {artikelcontent.content3} {artikelcontent.content4}
-                    </p>
-
-                    <p style={{color:"#3a3c3b"}}>
-                      {artikelcontent.content1} {artikelcontent.content2}
+                      {artikelcontent.content4}
                     </p>
                     <p style={{color:"#3a3c3b"}}>
-                      {artikelcontent.content3} {artikelcontent.content4}
+                      {artikelcontent.content5}
+                    </p>
+                    <p style={{color:"#3a3c3b"}}>
+                      {artikelcontent.content6}
+                    </p>
+                    <p style={{color:"#3a3c3b"}}>
+                      {artikelcontent.content7}
+                    </p>
+                    <p style={{color:"#3a3c3b"}}>
+                      {artikelcontent.content8}
                     </p>
                   </div>
+                  <h6 className="tinjauan mt-3" style={{color:"#3a3c3b"}}>
+                    Referensi:{" "}
+                  </h6>
+                  <p className="tinjauan mt-2" style={{color:"#3a3c3b"}}>
+                  Kementerian Kesehatan Direktorat Jenderal Pelayanan Kesehatan (diakses pada 2023).{" "}
+                  </p>
                 </div>
               </div>
             </div>

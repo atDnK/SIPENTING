@@ -42,19 +42,19 @@ function CardArtikel() {
     <>
       <Row className="artikel-filter mb-3">
         <Col lg={12} md={12} sm={12} className="d-flex justify-content-center flex-wrap pt-3 gap-3">
-          <Button variant="outline-light" onClick={() => handleFilter(null)}>
-            All
+          <Button variant="outline" onClick={() => handleFilter(null)}>
+            Semua
           </Button>
-          <Button variant="outline-light" className="me-2" onClick={() => handleFilter("gizi")}>
+          <Button variant="outline" className="me-2" onClick={() => handleFilter("gizi")}>
             Gizi
           </Button>
-          <Button variant="outline-light" className="me-2" onClick={() => handleFilter("pencegahan")}>
+          <Button variant="outline" className="me-2" onClick={() => handleFilter("pencegahan")}>
             Pencegahan
           </Button>
-          <Button variant="outline-light" className="me-2" onClick={() => handleFilter("dampak")}>
+          <Button variant="outline" className="me-2" onClick={() => handleFilter("dampak")}>
             Dampak
           </Button>
-          <Button variant="outline-light" className="me-2" onClick={() => handleFilter("stunting")}>
+          <Button variant="outline" className="me-2" onClick={() => handleFilter("stunting")}>
             Stunting
           </Button>
         </Col>

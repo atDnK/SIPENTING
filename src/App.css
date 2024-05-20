@@ -214,6 +214,10 @@
   color: var(--font);
 }
 
+.artikel .artikel-filter {
+  color: var(--primary);
+}
+
 .artikel .jenis-artikel {
   font-weight: 600;
 }
