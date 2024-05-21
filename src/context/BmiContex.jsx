@@ -24,21 +24,27 @@ export const BmiProvider = ({ children }) => {
 
     // Menentukan kategori BMI
     let kategori = "";
-    if (umur < 24) {
-      if (bmi < 11) {
-        kategori = "Kurus";
-      } else if (bmi >= 11 && bmi < 18) {
+    if (umur < 5) {
+      // Berdasarkan Peraturan Kemenkes, tabel untuk anak usia 0-5 tahun
+      if (bmi < 12) {
+        kategori = "Gizi kurang";
+      } else if (bmi >= 12.9 && bmi < 16.6) {
         kategori = "Normal";
-      } else {
-        kategori = "Gemuk";
+      } else if (bmi >= 16.6 && bmi < 18.3) {
+        kategori = "Gizi lebih";
       }
-    } else {
-      if (bmi < 13) {
-        kategori = "Kurus";
-      } else if (bmi >= 13 && bmi < 20) {
+      else {
+        kategori = "Obesitas";
+      }
+    } else { // Berdasarkan Peraturan Kemenkes, tabel untuk anak usia 5-18 tahun
+      if (bmi < 14) {
+        kategori = "Gizi kurang";
+      } else if (bmi >= 14.0 && bmi < 17.0) {
         kategori = "Normal";
+      } else if (bmi >= 17.0 && bmi < 25.0) {
+        kategori = "Gizi lebih";
       } else {
-        kategori = "Gemuk";
+        kategori = "Obesitas";
       }
     }
 

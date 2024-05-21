@@ -67,7 +67,7 @@ const BmiCalculator = () => {
       }
     }
 
-    return "No Data";
+    return "Tidak ada data";
   };
 
   const weightCategoryDecider = (weight, gender, ageInMonth) => {
@@ -85,9 +85,9 @@ const BmiCalculator = () => {
       const { SD3neg, SD2neg, SD1neg, SD0, SD1, SD2, SD3 } = weightStandards;
 
       if (weight <= SD3neg) {
-        return "Severely Wasted";
+        return "Sangat kurang";
       } else if (weight > SD3neg && weight <= SD2neg) {
-        return "Wasted";
+        return "Berat kurang";
       } else if (weight > SD2neg && weight <= SD1neg) {
         return "Normal";
       } else if (weight > SD1neg && weight <= SD0) {
@@ -95,15 +95,15 @@ const BmiCalculator = () => {
       } else if (weight > SD0 && weight <= SD1) {
         return "Normal";
       } else if (weight > SD1 && weight <= SD2) {
-        return "Overweight";
+        return "Berat lebih";
       } else if (weight > SD2 && weight <= SD3) {
-        return "Overweight";
+        return "Berat lebih";
       } else {
-        return "Obese";
+        return "Obesitas";
       }
     }
 
-    return "No Data";
+    return "Tidak ada data";
   };
 
   return (
@@ -219,7 +219,7 @@ const BmiCalculator = () => {
         <Alert variant='success' className='mt-4  '>
           <div className='row'>
             <div
-              className='col-lg-8 offset-lg-2 d-flex align-items-center justify-content-center'
+              className='col-lg-9 offset-lg-2 d-flex align-items-center justify-content-center'
               style={{ color: "#3a3c3b" }}
             >
               <div className='fw-semibold fs-5 float-start w-50'>
